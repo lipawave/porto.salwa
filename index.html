@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Salwa Khalipa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Salwa Khalipa, Information Systems student at UNSIKA. Systems, processes, and the people who run them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Salwa Khalipa</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#roles">Roles</a>
+      <a href="#work">How I work</a>
+      <a href="#cases">Case studies</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="glow glow-a" aria-hidden="true"></div>
+    <div class="glow glow-b" aria-hidden="true"></div>
+    <div class="wrap hero-inner reveal">
+      <p class="eyebrow">Information Systems · UNSIKA</p>
+      <h1>People see the result.<br><span class="soft">I'm more curious about the process.</span></h1>
+      <p class="lead">I study Information Systems, teach programming to kids at Timedoor Academy, and handle administration at HIMSIKA. Three different places, one question I keep asking: which path does this work actually take, and where does it usually get stuck?</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#cases">See the case study</a>
+        <a class="btn btn-ghost" href="#roles">Get to know me</a>
+      </div>
+      <ul class="pills" aria-label="Focus areas">
+        <li>Systems Analysis</li>
+        <li>Process Improvement</li>
+        <li>Workflow Automation</li>
+        <li>Documentation Management</li>
+        <li>Project Coordination</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="roles">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Three places, one pattern</p>
+        <h2>One week, three roles.</h2>
+        <p class="lead">I'm not only a student, an instructor, or an organizer. All three run at the same time, and each one asks for a different way of thinking.</p>
+      </header>
+
+      <div class="roles">
+        <article class="role reveal">
+          <p class="role-tag">Study</p>
+          <h3>Information Systems, UNSIKA</h3>
+          <dl>
+            <dt>What you see</dt>
+            <dd>Assignments and grades.</dd>
+            <dt>What actually happens</dt>
+            <dd>Learning why a system is designed the way it is, and who gets affected when the design is wrong.</dd>
+          </dl>
+        </article>
+        <article class="role reveal">
+          <p class="role-tag">Work</p>
+          <h3>Timedoor Academy</h3>
+          <dl>
+            <dt>What you see</dt>
+            <dd>Programming classes for kids.</dd>
+            <dt>What actually happens</dt>
+            <dd>Tracking each student's progress, writing it into a report, then explaining it to parents in words they understand.</dd>
+          </dl>
+        </article>
+        <article class="role reveal">
+          <p class="role-tag">Organization</p>
+          <h3>HIMSIKA</h3>
+          <dl>
+            <dt>What you see</dt>
+            <dd>Letters sent and reports finished.</dd>
+            <dt>What actually happens</dt>
+            <dd>Formats, signatures, letter numbers, archives, and the people who need to know at every step.</dd>
+          </dl>
+        </article>
+      </div>
+
+      <p class="reflection reveal">Not everything is always tidy. The hardest part isn't the amount of work. It's switching modes in a single day: from explaining a <em>loop</em> to kids, to checking a letter's format, to a class assignment. That taught me work is rarely hard because of its content. It's usually hard because the flow isn't clear.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="work">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">How I work</p>
+        <h2>What I took from there.</h2>
+      </header>
+      <ol class="principles">
+        <li class="reveal">
+          <h3>Understand the flow first, then do the work.</h3>
+          <p>Before writing a letter, I need to know who needs it, when, and where it will be filed.</p>
+          <span class="source">From HIMSIKA</span>
+        </li>
+        <li class="reveal">
+          <h3>If the other person doesn't get it, it isn't done.</h3>
+          <p>A progress report that's correct but confuses parents still hasn't done its job.</p>
+          <span class="source">From Timedoor</span>
+        </li>
+        <li class="reveal">
+          <h3>Anything done over and over deserves a system.</h3>
+          <p>That's why I built the correspondence automation below.</p>
+          <span class="source">From HIMSIKA</span>
+        </li>
+        <li class="reveal">
+          <h3>Write it down, so nothing depends on memory.</h3>
+          <p>Minutes and archives aren't a formality. They're how an organization remembers.</p>
+          <span class="source">From Education Fair and HIMSIKA</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="cases">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Case study · HIMSIKA</p>
+        <h2>Behind every letter that went out on time.</h2>
+        <p class="lead">As Vice General Secretary, I saw the same steps repeat for every letter. So I built a small system to carry them.</p>
+      </header>
+
+      <figure class="flow reveal" aria-label="Correspondence flow">
+        <ol>
+          <li><span class="tool">Google Forms</span><strong>Request</strong><span>A committee member submits what the letter needs.</span></li>
+          <li><span class="tool">Google Sheets</span><strong>Log</strong><span>Each request lands in one sheet as a record.</span></li>
+          <li><span class="tool">Apps Script</span><strong>Generate</strong><span>A script fills the letter template from that record.</span></li>
+          <li><span class="tool">Google Drive</span><strong>Archive</strong><span>The finished file is filed into a folder by month.</span></li>
+        </ol>
+        <figcaption>The flow I automated, from request to archive.</figcaption>
+      </figure>
+
+      <div class="case-grid">
+        <div class="case-card reveal">
+          <h3>What I did</h3>
+          <p>Mapped the steps a letter goes through, then connected Google Forms, Sheets, Drive, and Apps Script so a request turns into a filed document.</p>
+        </div>
+        <div class="case-card reveal">
+          <h3>How I tested it</h3>
+          <p>Ran it with real requests before calling it ready, and fixed what broke along the way.</p>
+        </div>
+        <div class="case-card reveal">
+          <h3>Where it stands</h3>
+          <p>It works, but it isn't officially adopted by the organization yet. Next, I want the flow documented well enough that the next secretary can run it without me.</p>
+        </div>
+      </div>
+
+      <div class="case-split reveal">
+        <div class="case-split-head">
+          <p class="eyebrow">Case study · Education Fair 2026</p>
+          <h2 class="h2-sm">Big event, a lot of paper.</h2>
+        </div>
+        <div class="case-split-body">
+          <p>As Executive Secretary, I handled the administration side of the event: official letters to partners, participant certificates, documentation, and the accountability report afterward.</p>
+          <p>Much of it was a team effort. What I own is keeping the documents consistent and making sure each one reached the right person at the right step.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="timeline">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Timeline</p>
+        <h2>Three lanes, running in parallel.</h2>
+      </header>
+      <div class="lanes" role="list">
+        <div class="lane reveal" role="listitem" data-lane="study">
+          <h3>Study</h3>
+          <ul>
+            <li><strong>Information Systems</strong><span>Universitas Singaperbangsa Karawang</span></li>
+            <li><strong>Systems & business processes</strong><span>Learning how to model the flows I work in</span></li>
+          </ul>
+        </div>
+        <div class="lane reveal" role="listitem" data-lane="work">
+          <h3>Work</h3>
+          <ul>
+            <li><strong>Part-time Programming Instructor</strong><span>Timedoor Academy · ScratchJr, Scratch, Python, JavaScript, Kodu, 3D Animator</span></li>
+            <li><strong>Progress reports</strong><span>Written for every student and explained to parents</span></li>
+          </ul>
+        </div>
+        <div class="lane reveal" role="listitem" data-lane="org">
+          <h3>Organization</h3>
+          <ul>
+            <li><strong>Vice General Secretary</strong><span>HIMSIKA · built the correspondence automation</span></li>
+            <li><strong>Executive Secretary</strong><span>Education Fair 2026</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Each one, where I used it.</h2>
+      </header>
+      <dl class="skills">
+        <div class="reveal"><dt>Systems Analysis</dt><dd>Mapping how a letter moves through HIMSIKA before automating it.</dd></div>
+        <div class="reveal"><dt>Process Improvement</dt><dd>Turning repeated correspondence steps into one flow.</dd></div>
+        <div class="reveal"><dt>Workflow Automation</dt><dd>Google Forms, Sheets, Drive, and Apps Script.</dd></div>
+        <div class="reveal"><dt>Documentation Management</dt><dd>Letters, minutes, certificates, and reports at HIMSIKA and Education Fair.</dd></div>
+        <div class="reveal"><dt>Project Coordination</dt><dd>Keeping committee, partners, and participants on the same page.</dd></div>
+        <div class="reveal"><dt>Clear Communication</dt><dd>Explaining student progress to parents at Timedoor.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="closing" id="contact">
+    <div class="glow glow-c" aria-hidden="true"></div>
+    <div class="wrap closing-inner reveal">
+      <p class="eyebrow">Still in progress</p>
+      <h2>This portfolio isn't finished, and neither am I.</h2>
+      <p class="lead">Right now I'm learning more about systems analysis and business process modeling. If you're looking for someone who enjoys tidying up how work flows and keeps learning, I'd love to talk.</p>
+      <div class="contact">
+        <span class="email" id="email">salwakhalipa13@gmail.com</span>
+        <button class="btn btn-primary" id="copy-email" type="button">Copy email</button>
+        <a class="btn btn-ghost" href="#" id="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="copy-note" id="copy-note" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">© <span id="year">2026</span> Salwa Khalipa · Karawang, Indonesia</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
