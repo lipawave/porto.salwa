@@ -1,27 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Salwa Khalipa</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Salwa Khalipa, Information Systems student at UNSIKA. Systems, processes, and the people who run them.">
+<meta name="description" content="Salwa Khalipa, mahasiswa Sistem Informasi Universitas Singaperbangsa Karawang. Cerita soal pekerjaan di balik pekerjaan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav" id="nav">
+<header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="#top">Salwa Khalipa</a>
-    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-    <nav class="nav-links" id="nav-links">
-      <a href="#roles">Roles</a>
-      <a href="#work">How I work</a>
-      <a href="#cases">Case studies</a>
-      <a href="#timeline">Timeline</a>
+    <button class="btn btn-ghost btn-sm nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Sections">
+      <a href="#story">Story</a>
+      <a href="#work">Projects</a>
+      <a href="#more">Experience</a>
       <a href="#contact" class="nav-cta">Contact</a>
     </nav>
   </div>
@@ -29,218 +28,323 @@
 
 <main id="top">
 
-  <section class="hero">
-    <div class="glow glow-a" aria-hidden="true"></div>
-    <div class="glow glow-b" aria-hidden="true"></div>
-    <div class="wrap hero-inner reveal">
-      <p class="eyebrow">Information Systems · UNSIKA</p>
-      <h1>People see the result.<br><span class="soft">I'm more curious about the process.</span></h1>
-      <p class="lead">I study Information Systems, teach programming to kids at Timedoor Academy, and handle administration at HIMSIKA. Three different places, one question I keep asking: which path does this work actually take, and where does it usually get stuck?</p>
+  <!-- 1. HERO -->
+  <section class="hero wrap grid-12">
+    <div class="hero-text reveal">
+      <p class="eyebrow">Salwa Khalipa · Information Systems, UNSIKA</p>
+      <h1>Saya tertarik pada apa yang terjadi <em>di balik</em> sebuah pekerjaan.</h1>
+      <p class="lead">Mahasiswa Sistem Informasi yang suka merapikan cara kerja: dari surat dan arsip organisasi sampai sistem kecil yang bikin tugas berulang jalan sendiri.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="#cases">See the case study</a>
-        <a class="btn btn-ghost" href="#roles">Get to know me</a>
+        <a class="btn btn-primary" href="#work">View My Projects</a>
+        <!-- PLACEHOLDER: taruh CV di cv/Salwa-Khalipa-CV.pdf -->
+        <a class="btn btn-ghost" href="cv/Salwa-Khalipa-CV.pdf" download>Download CV</a>
       </div>
-      <ul class="pills" aria-label="Focus areas">
-        <li>Systems Analysis</li>
-        <li>Process Improvement</li>
-        <li>Workflow Automation</li>
-        <li>Documentation Management</li>
-        <li>Project Coordination</li>
-      </ul>
     </div>
+    <figure class="hero-photo reveal">
+      <div class="frame frame-portrait"><span class="mono">Your photo</span></div>
+      <figcaption class="now">
+        <span class="now-label mono"><span class="live" aria-hidden="true"></span>Now</span>
+        <a class="now-role" href="#exp-timedoor"><b>Programming Instructor</b><span>Timedoor Academy</span></a>
+        <a class="now-role" href="#exp-himsika"><b>Vice Secretary General</b><span>HIMSIKA</span></a>
+      </figcaption>
+    </figure>
   </section>
 
-  <section class="section" id="roles">
-    <div class="wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">Three places, one pattern</p>
-        <h2>One week, three roles.</h2>
-        <p class="lead">I'm not only a student, an instructor, or an organizer. All three run at the same time, and each one asks for a different way of thinking.</p>
-      </header>
-
-      <div class="roles">
-        <article class="role reveal">
-          <p class="role-tag">Study</p>
-          <h3>Information Systems, UNSIKA</h3>
-          <dl>
-            <dt>What you see</dt>
-            <dd>Assignments and grades.</dd>
-            <dt>What actually happens</dt>
-            <dd>Learning why a system is designed the way it is, and who gets affected when the design is wrong.</dd>
-          </dl>
-        </article>
-        <article class="role reveal">
-          <p class="role-tag">Work</p>
-          <h3>Timedoor Academy</h3>
-          <dl>
-            <dt>What you see</dt>
-            <dd>Programming classes for kids.</dd>
-            <dt>What actually happens</dt>
-            <dd>Tracking each student's progress, writing it into a report, then explaining it to parents in words they understand.</dd>
-          </dl>
-        </article>
-        <article class="role reveal">
-          <p class="role-tag">Organization</p>
-          <h3>HIMSIKA</h3>
-          <dl>
-            <dt>What you see</dt>
-            <dd>Letters sent and reports finished.</dd>
-            <dt>What actually happens</dt>
-            <dd>Formats, signatures, letter numbers, archives, and the people who need to know at every step.</dd>
-          </dl>
-        </article>
+  <!-- 2. LIFE IN BETWEEN -->
+  <section class="section wrap" id="story">
+    <div class="life grid-12 reveal">
+      <div class="life-text">
+        <p class="eyebrow">Three Roles at Once</p>
+        <h2>Kuliah, kerja, organisasi. Semuanya jalan bareng.</h2>
       </div>
-
-      <p class="reflection reveal">Not everything is always tidy. The hardest part isn't the amount of work. It's switching modes in a single day: from explaining a <em>loop</em> to kids, to checking a letter's format, to a class assignment. That taught me work is rarely hard because of its content. It's usually hard because the flow isn't clear.</p>
+      <div class="life-side">
+        <p>Ketiganya saya jalani bersamaan, dan masing-masing membentuk saya: kuliah mengasah cara berpikir, mengajar melatih cara menjelaskan, sekretariat membiasakan saya rapi.</p>
+        <p class="pull">Dari titik temu ketiganya, saya mulai membangun sistem.</p>
+      </div>
     </div>
+
+    <nav class="orbit reveal" aria-label="Tiga peran yang berjalan bersamaan">
+      <span class="orbit-ring" aria-hidden="true"></span>
+      <div class="orbit-track">
+        <span class="spoke" data-lane="0" style="--a: -90deg"></span>
+        <span class="spoke" data-lane="1" style="--a: 30deg"></span>
+        <span class="spoke" data-lane="2" style="--a: 150deg"></span>
+        <a class="thread planet" href="#edu" data-lane="0" style="--a: -90deg">
+          <span class="planet-body">
+            <span class="frame frame-planet"><span class="mono">Photo: campus</span></span>
+            <span class="thread-label"><span class="mono">Study</span>Information Systems Student</span>
+          </span>
+        </a>
+        <a class="thread planet" href="#exp-timedoor" data-lane="1" style="--a: 30deg">
+          <span class="planet-body">
+            <span class="frame frame-planet"><span class="mono">Photo: teaching</span></span>
+            <span class="thread-label"><span class="mono">Work</span>Programming Instructor</span>
+          </span>
+        </a>
+        <a class="thread planet" href="#exp-himsika" data-lane="2" style="--a: 150deg">
+          <span class="planet-body">
+            <span class="frame frame-planet"><span class="mono">Photo: HIMSIKA</span></span>
+            <span class="thread-label"><span class="mono">Organization</span>Vice Secretary General</span>
+          </span>
+        </a>
+      </div>
+      <a class="thread core" href="#work">
+        <span class="mono">Where they meet</span>
+        <span class="core-title">Building systems</span>
+        <span class="core-sub">3 projects</span>
+      </a>
+    </nav>
+    <p class="orbit-hint">Tiga peran, satu pusat. Klik lingkarannya untuk langsung ke ceritanya.</p>
+
   </section>
 
-  <section class="section section-tint" id="work">
-    <div class="wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">How I work</p>
-        <h2>What I took from there.</h2>
-      </header>
-      <ol class="principles">
-        <li class="reveal">
-          <h3>Understand the flow first, then do the work.</h3>
-          <p>Before writing a letter, I need to know who needs it, when, and where it will be filed.</p>
-          <span class="source">From HIMSIKA</span>
-        </li>
-        <li class="reveal">
-          <h3>If the other person doesn't get it, it isn't done.</h3>
-          <p>A progress report that's correct but confuses parents still hasn't done its job.</p>
-          <span class="source">From Timedoor</span>
-        </li>
-        <li class="reveal">
-          <h3>Anything done over and over deserves a system.</h3>
-          <p>That's why I built the correspondence automation below.</p>
-          <span class="source">From HIMSIKA</span>
-        </li>
-        <li class="reveal">
-          <h3>Write it down, so nothing depends on memory.</h3>
-          <p>Minutes and archives aren't a formality. They're how an organization remembers.</p>
-          <span class="source">From Education Fair and HIMSIKA</span>
-        </li>
-      </ol>
+  <!-- 4. SELECTED PROJECTS -->
+  <section class="section section-alt" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Selected Projects</p>
+      <h2>Sistem yang lahir dari masalah nyata di sekitar saya.</h2>
     </div>
-  </section>
 
-  <section class="section" id="cases">
-    <div class="wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">Case study · HIMSIKA</p>
-        <h2>Behind every letter that went out on time.</h2>
-        <p class="lead">As Vice General Secretary, I saw the same steps repeat for every letter. So I built a small system to carry them.</p>
-      </header>
+    <article class="project grid-12 reveal">
+      <div class="frame frame-shot"><span class="mono">Screenshot: Inventory Borrowing System</span></div>
+      <div class="project-body">
+        <p class="mono">HIMSIKA · Web App · Google Apps Script</p>
+        <h3>Inventory Borrowing System</h3>
+        <p>Anggota perlu tahu barang inventaris apa saja yang tersedia, sementara spreadsheet stoknya tidak aman kalau dibuka untuk semua orang. Saya membuat website peminjaman sebagai pintu depannya: anggota cukup pilih barang dan isi form, sedangkan datanya tetap tersimpan rapi di Google Sheets.</p>
+        <p class="impact"><span class="mono">Impact</span><b>30+ anggota</b> HIMSIKA kini meminjam barang lewat website, tanpa perlu membuka spreadsheet inventaris.</p>
+        <ul class="tags"><li>Web App</li><li>Apps Script</li><li>Google Sheets</li></ul>
+        <a class="flow-link" href="#flow" data-flow="inventory">See the flow step by step →</a>
+        <!-- PLACEHOLDER: tambahkan link demo dan pelajaran -->
+        <blockquote class="lesson"><span class="mono">What I learned</span>Sistem yang bagus itu yang penggunanya tidak sadar sedang memakainya. Anggota cukup memilih barang, sisanya urusan sistem.</blockquote>
+      </div>
+    </article>
 
-      <figure class="flow reveal" aria-label="Correspondence flow">
-        <ol>
-          <li><span class="tool">Google Forms</span><strong>Request</strong><span>A committee member submits what the letter needs.</span></li>
-          <li><span class="tool">Google Sheets</span><strong>Log</strong><span>Each request lands in one sheet as a record.</span></li>
-          <li><span class="tool">Apps Script</span><strong>Generate</strong><span>A script fills the letter template from that record.</span></li>
-          <li><span class="tool">Google Drive</span><strong>Archive</strong><span>The finished file is filed into a folder by month.</span></li>
+    <article class="project project-flip grid-12 reveal">
+      <div class="frame frame-shot"><span class="mono">Screenshot: Correspondence Automation</span></div>
+      <div class="project-body">
+        <p class="mono">HIMSIKA · Google Workspace</p>
+        <h3>Correspondence Automation</h3>
+        <p>Sebagai Wakil Sekretaris Umum, saya merekap semua surat masuk dan keluar. Dulu prosesnya manual dan berulang. Saya menggantinya dengan satu Google Form yang tersambung ke Sheets dan Drive. Sekarang cukup isi form, sisanya berjalan otomatis.</p>
+        <div class="before-after" aria-label="Sebelum dan sesudah">
+          <div><span class="mono">Before</span>Unduh file, pindahkan ke folder, ketik ulang di spreadsheet</div>
+          <span class="ba-arrow" aria-hidden="true">→</span>
+          <div class="after"><span class="mono">After</span>Isi satu form. Selesai.</div>
+        </div>
+        <p class="impact"><span class="mono">Impact</span>Rekap surat yang dulu butuh <b>3 langkah manual</b> kini selesai lewat satu form. Sistemnya juga akan diwariskan ke Wakil Sekretaris Umum periode berikutnya, jadi tidak berhenti di saya.</p>
+        <ul class="tags"><li>Google Forms</li><li>Google Sheets</li><li>Google Drive</li><li>Apps Script</li></ul>
+        <a class="flow-link" href="#flow" data-flow="letters">See the flow step by step →</a>
+        <blockquote class="lesson"><span class="mono">What I learned</span>Sistem yang baik harus bisa dipakai orang berikutnya tanpa saya. Karena itu rekap ini disiapkan untuk diwariskan, bukan hanya untuk saya.</blockquote>
+      </div>
+    </article>
+
+    <article class="project grid-12 reveal" id="sepakat">
+      <div class="frame frame-shot"><span class="mono">Design / screenshot: SEPAKAT</span></div>
+      <div class="project-body">
+        <p class="mono">Campus Project · Project Lead</p>
+        <h3>SEPAKAT <span class="wip"><span class="wip-dot" aria-hidden="true"></span>In Progress</span></h3>
+        <p>Sistem pengajuan ganti jadwal kuliah. Idenya datang dari pengalaman saya sendiri sebagai mahasiswa yang juga bekerja: jadwal kuliah sering diganti mendadak, padahal jadwal kerja sudah terkunci. SEPAKAT membuat perubahan jadwal jadi keputusan bersama, bukan sepihak.</p>
+        <ul class="facts">
+          <li>Dosen mengajukan jadwal pengganti lewat sistem</li>
+          <li>Mahasiswa mendapat notifikasi, lalu memilih setuju atau tidak setuju disertai alasan</li>
+          <li>Jadwal baru sah kalau minimal 50% kelas setuju</li>
+          <li>Fakultas berperan sebagai admin</li>
+        </ul>
+        <p class="impact"><span class="mono">My Role</span>Menyusun kebutuhan sistem, merancang alurnya, dan mengoordinasikan tim.</p>
+        <ul class="tags"><li>Requirements Analysis</li><li>System Flow</li><li>Team Coordination</li></ul>
+      </div>
+    </article>
+
+    <!-- Walkthrough of both systems, part of the projects section -->
+    <div class="flow-head reveal" id="flow">
+      <p class="mono">System Walkthrough</p>
+      <h3>Dari masalah, ke proses, ke solusi.</h3>
+    </div>
+      <div class="flow reveal">
+        <div class="flow-tabs" role="tablist" aria-label="Pilih proyek">
+          <button role="tab" data-project="inventory" aria-selected="true">Inventory Borrowing</button>
+          <button role="tab" data-project="letters" aria-selected="false">Correspondence</button>
+        </div>
+
+        <ol class="flow-steps" aria-label="Tahapan">
+          <li><button data-stage="0" aria-current="step"><span class="mono">01</span>Problem</button></li>
+          <li><button data-stage="1"><span class="mono">02</span>Process</button></li>
+          <li><button data-stage="2"><span class="mono">03</span>Solution</button></li>
         </ol>
-        <figcaption>The flow I automated, from request to archive.</figcaption>
-      </figure>
 
-      <div class="case-grid">
-        <div class="case-card reveal">
-          <h3>What I did</h3>
-          <p>Mapped the steps a letter goes through, then connected Google Forms, Sheets, Drive, and Apps Script so a request turns into a filed document.</p>
+        <div class="flow-stage">
+          <div class="flow-copy" aria-live="polite">
+            <h3 id="flow-title"></h3>
+            <p id="flow-text"></p>
+          </div>
+          <div class="flow-diagram" id="flow-diagram" aria-label="Diagram sistem"></div>
         </div>
-        <div class="case-card reveal">
-          <h3>How I tested it</h3>
-          <p>Ran it with real requests before calling it ready, and fixed what broke along the way.</p>
-        </div>
-        <div class="case-card reveal">
-          <h3>Where it stands</h3>
-          <p>It works, but it isn't officially adopted by the organization yet. Next, I want the flow documented well enough that the next secretary can run it without me.</p>
+
+        <div class="flow-nav">
+          <button class="btn btn-ghost" id="flow-prev">Back</button>
+          <button class="btn btn-primary" id="flow-next">Next step</button>
         </div>
       </div>
-
-      <div class="case-split reveal">
-        <div class="case-split-head">
-          <p class="eyebrow">Case study · Education Fair 2026</p>
-          <h2 class="h2-sm">Big event, a lot of paper.</h2>
-        </div>
-        <div class="case-split-body">
-          <p>As Executive Secretary, I handled the administration side of the event: official letters to partners, participant certificates, documentation, and the accountability report afterward.</p>
-          <p>Much of it was a team effort. What I own is keeping the documents consistent and making sure each one reached the right person at the right step.</p>
-        </div>
-      </div>
-    </div>
+  </div>
   </section>
 
-  <section class="section section-tint" id="timeline">
+  <!-- 5. EXPERIENCE IN PRACTICE -->
+  <section class="section wrap" id="more">
+    <div class="section-head reveal">
+      <p class="eyebrow">Experience in Practice</p>
+      <h2>Buktinya ada di setiap dokumen.</h2>
+      <p class="sub">Tiga peran, lengkap dengan dokumen hasil kerja saya. Klik dokumennya untuk melihat lebih jelas.</p>
+    </div>
+
+    <article class="role grid-12 reveal" id="exp-timedoor">
+      <div class="role-body">
+        <p class="mono">Timedoor Academy · Feb 2026 – Present</p>
+        <h3>Part-time Programming Instructor</h3>
+        <p class="pull">Mengajar itu separuh pekerjaan. Separuhnya lagi: memperhatikan.</p>
+        <p>Setiap minggu saya mengajar sekitar 20 murid coding, mulai dari ScratchJr, Scratch, Python, JavaScript, Kodu, sampai 3D Animator. Tiap kelas ditutup dengan karya buatan murid sendiri, plus catatan perkembangan dari saya.</p>
+        <ul class="facts">
+            <li>Menulis laporan perkembangan dan perilaku belajar tiap murid di setiap akhir kelas</li>
+            <li>Membimbing murid membuat proyek sendiri di akhir setiap materi</li>
+            <li>Memandu pertemuan orang tua (parent-teacher meeting) saat murid mempresentasikan karyanya</li>
+            <li>Membuat sertifikat untuk setiap murid di akhir kelas</li>
+        </ul>
+      </div>
+      <div class="proof" data-group="Timedoor Academy">
+        <p class="mono proof-label">Proof</p>
+        <div class="proof-stack">
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Class reports</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Student projects</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Parent-teacher meeting</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Certificates</span></span></button>
+        </div>
+      </div>
+    </article>
+
+    <article class="role grid-12 role-flip reveal" id="exp-himsika">
+      <div class="role-body">
+        <p class="mono">HIMSIKA · Jan 2026 – Present</p>
+        <h3>Vice Secretary General</h3>
+        <p class="pull">Setiap keputusan meninggalkan jejak. Tugas saya memastikan jejak itu mudah dibaca.</p>
+        <p>Sekretariat adalah ingatan organisasi. Saya memastikan apa yang diputuskan, dikirim, dan diterima selalu bisa ditemukan lagi.</p>
+        <ul class="facts">
+            <li>Mencatat notulensi di setiap rapat</li>
+            <li>Merekap surat masuk, surat keluar, dan dokumen organisasi</li>
+            <li>Meninjau dan merevisi setiap surat yang masuk ke sekretariat</li>
+            <li>Mengotomasi rekap surat yang sebelumnya dikerjakan manual (<a href="#work">lihat sistemnya</a>)</li>
+        </ul>
+      </div>
+      <div class="proof" data-group="HIMSIKA">
+        <p class="mono proof-label">Proof</p>
+        <div class="proof-stack">
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Meeting minutes</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Outgoing letters</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Revision drafts</span></span></button>
+        </div>
+      </div>
+    </article>
+
+    <article class="role grid-12 reveal" id="exp-edufair">
+      <div class="role-body">
+        <p class="mono">Education Fair 2026 · Feb – Jul 2026</p>
+        <h3>Executive Secretary</h3>
+        <p class="pull">Acara besar berdiri di atas dokumen yang beres tepat waktu.</p>
+        <p>Saya memegang sekretariat Education Fair, dari proposal pertama sampai laporan terakhir.</p>
+        <ul class="facts">
+            <li>Menyusun surat-surat resmi acara</li>
+            <li>Mengajukan nomor sertifikat peserta ke fakultas</li>
+            <li>Menulis proposal sampai dananya cair</li>
+            <li>Menyusun LPJ setelah acara selesai</li>
+        </ul>
+        <dl class="stats">
+          <div><dt data-count="50" data-suffix="+">50+</dt><dd>surat resmi disusun</dd></div>
+          <div><dt data-count="1200">1.200</dt><dd>nomor sertifikat diajukan ke fakultas dan disetujui</dd></div>
+          <div><dt>Didanai</dt><dd>proposal acara disetujui</dd></div>
+          <div><dt data-count="200" data-prefix="±">±200</dt><dd>halaman laporan pertanggungjawaban (LPJ)</dd></div>
+        </dl>
+      </div>
+      <div class="proof" data-group="Education Fair 2026">
+        <p class="mono proof-label">Proof</p>
+        <div class="proof-stack">
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Official letters</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Proposal</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">Certificates</span></span></button>
+          <button class="doc" type="button"><span class="frame frame-doc"><span class="mono">LPJ</span></span></button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- 6. EDUCATION & TOOLS -->
+  <section class="section section-alt" id="experience">
     <div class="wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">Timeline</p>
-        <h2>Three lanes, running in parallel.</h2>
-      </header>
-      <div class="lanes" role="list">
-        <div class="lane reveal" role="listitem" data-lane="study">
-          <h3>Study</h3>
-          <ul>
-            <li><strong>Information Systems</strong><span>Universitas Singaperbangsa Karawang</span></li>
-            <li><strong>Systems & business processes</strong><span>Learning how to model the flows I work in</span></li>
-          </ul>
+      <div class="section-head reveal">
+        <p class="eyebrow">Education &amp; Tools</p>
+        <h2>Bekal yang saya bawa.</h2>
+      </div>
+      <div class="caps-grid">
+        <div class="caps-block reveal" id="edu">
+          <h3 class="mono">Education</h3>
+          <dl class="rows">
+            <div><dt>Universitas Singaperbangsa Karawang</dt><dd>Undergraduate, Information Systems · 2025 – Present · Semester 3 · GPA 3.88</dd></div>
+          </dl>
+          <p class="edu-note">Yang paling bikin saya semangat di kuliah: mengurai masalah nyata jadi kebutuhan, alur, dan rancangan sistem. Ilmu itu sedang saya praktikkan lewat <a href="#sepakat">SEPAKAT</a>, proyek yang masih saya kembangkan.</p>
         </div>
-        <div class="lane reveal" role="listitem" data-lane="work">
-          <h3>Work</h3>
-          <ul>
-            <li><strong>Part-time Programming Instructor</strong><span>Timedoor Academy · ScratchJr, Scratch, Python, JavaScript, Kodu, 3D Animator</span></li>
-            <li><strong>Progress reports</strong><span>Written for every student and explained to parents</span></li>
-          </ul>
-        </div>
-        <div class="lane reveal" role="listitem" data-lane="org">
-          <h3>Organization</h3>
-          <ul>
-            <li><strong>Vice General Secretary</strong><span>HIMSIKA · built the correspondence automation</span></li>
-            <li><strong>Executive Secretary</strong><span>Education Fair 2026</span></li>
+        <div class="caps-block reveal">
+          <h3 class="mono">Tools I Use</h3>
+          <ul class="chips">
+            <li>Google Apps Script</li><li>Google Sheets</li><li>Google Forms</li><li>Google Drive</li><li>Python</li><li>JavaScript</li><li>Scratch</li>
+            <li class="placeholder">[+ add tools]</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="skills">
-    <div class="wrap">
-      <header class="section-head reveal">
-        <p class="eyebrow">Skills</p>
-        <h2>Each one, where I used it.</h2>
-      </header>
-      <dl class="skills">
-        <div class="reveal"><dt>Systems Analysis</dt><dd>Mapping how a letter moves through HIMSIKA before automating it.</dd></div>
-        <div class="reveal"><dt>Process Improvement</dt><dd>Turning repeated correspondence steps into one flow.</dd></div>
-        <div class="reveal"><dt>Workflow Automation</dt><dd>Google Forms, Sheets, Drive, and Apps Script.</dd></div>
-        <div class="reveal"><dt>Documentation Management</dt><dd>Letters, minutes, certificates, and reports at HIMSIKA and Education Fair.</dd></div>
-        <div class="reveal"><dt>Project Coordination</dt><dd>Keeping committee, partners, and participants on the same page.</dd></div>
-        <div class="reveal"><dt>Clear Communication</dt><dd>Explaining student progress to parents at Timedoor.</dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="closing" id="contact">
-    <div class="glow glow-c" aria-hidden="true"></div>
-    <div class="wrap closing-inner reveal">
-      <p class="eyebrow">Still in progress</p>
-      <h2>This portfolio isn't finished, and neither am I.</h2>
-      <p class="lead">Right now I'm learning more about systems analysis and business process modeling. If you're looking for someone who enjoys tidying up how work flows and keeps learning, I'd love to talk.</p>
-      <div class="contact">
-        <span class="email" id="email">salwakhalipa13@gmail.com</span>
-        <button class="btn btn-primary" id="copy-email" type="button">Copy email</button>
-        <a class="btn btn-ghost" href="#" id="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- 7. CONTACT -->
+  <section class="section wrap" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2 class="contact-title">Yuk, ngobrol soal pekerjaan <em>di balik</em> pekerjaan.</h2>
+    <p class="lead">Terbuka untuk peluang di administrasi, analisis proses, dan sistem informasi. Silakan kirim email.</p>
+    <div class="contact-list">
+      <div class="contact-row">
+        <span class="mono">Email</span>
+        <span class="contact-value" id="email">salwakhalipa13@gmail.com</span>
+        <button class="btn btn-ghost btn-sm" id="copy-email">Copy</button>
       </div>
-      <p class="copy-note" id="copy-note" aria-live="polite"></p>
+      <div class="contact-row">
+        <span class="mono">LinkedIn</span>
+        <!-- PLACEHOLDER: ganti href dan teks dengan URL LinkedIn kamu -->
+        <a class="contact-value" href="#" target="_blank" rel="noopener">[URL LinkedIn kamu]</a>
+      </div>
+      <div class="contact-row">
+        <span class="mono">CV</span>
+        <a class="contact-value" href="cv/Salwa-Khalipa-CV.pdf" download>Download PDF</a>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer class="footer">
-  <div class="wrap">© <span id="year">2026</span> Salwa Khalipa · Karawang, Indonesia</div>
+<footer class="wrap footer">
+  <span>Salwa Khalipa</span>
+  <span>Karawang, Indonesia</span>
 </footer>
+
+<dialog class="viewer" id="viewer" aria-label="Penampil dokumen">
+  <div class="viewer-doc" id="viewer-doc"></div>
+  <div class="viewer-bar">
+    <div>
+      <p class="mono" id="viewer-group"></p>
+      <p class="viewer-caption" id="viewer-caption"></p>
+    </div>
+    <div class="viewer-actions">
+      <span class="mono" id="viewer-count"></span>
+      <button class="btn btn-ghost btn-sm" id="viewer-prev" aria-label="Dokumen sebelumnya">←</button>
+      <button class="btn btn-ghost btn-sm" id="viewer-next" aria-label="Dokumen berikutnya">→</button>
+      <form method="dialog"><button class="btn btn-primary btn-sm">Close</button></form>
+    </div>
+  </div>
+</dialog>
 
 <script src="script.js"></script>
 </body>
