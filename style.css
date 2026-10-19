@@ -532,15 +532,6 @@ em { padding-inline: 0.04em 0.1em; }
 .flow-head .mono { color: var(--rose); }
 .flow-head h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -0.03em; }
 
-/* "Sedang dikembangkan" badge on an in-progress project */
-.wip {
-  display: inline-flex; align-items: center; gap: 8px; vertical-align: middle; margin-left: 10px;
-  padding: 5px 12px 5px 10px; border-radius: 999px; border: 1px solid color-mix(in srgb, #D9902F 45%, transparent);
-  background: color-mix(in srgb, #F6C77B 22%, var(--white)); color: #8A5A12;
-  font: 500 0.72rem/1 var(--mono); letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap;
-}
-.wip-dot { position: relative; width: 7px; height: 7px; border-radius: 50%; background: #E0952C; }
-.wip-dot::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: #E0952C; animation: ping 1.8s var(--ease) infinite; }
 .edu-note a { color: var(--rose); font-weight: 600; }
 .impact b { color: var(--rose); font-weight: 700; }
 .impact { display: block; }
